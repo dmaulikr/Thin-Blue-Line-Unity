@@ -1,0 +1,17 @@
+using UnityEngine;
+using System.Collections;
+
+public class TransformFunctions : MonoBehaviour
+{
+    public float turnSpeed = 50f;
+    
+    
+    void Update ()
+    {
+         if(Input.GetKey(KeyCode.E))
+            transform.Rotate(new Vector3(0, 0, 1));
+        
+        if(Input.GetKey(KeyCode.C))
+            transform.Rotate(new Vector3(0, 0, 1));
+    }
+}
